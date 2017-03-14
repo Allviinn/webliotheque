@@ -1,0 +1,68 @@
+{
+	box-sizing: border-box;
+}
+
+
+html{
+	height:100%;
+}
+body{
+
+background-color: black;
+background-image: url(image1.jpg);
+background-size: cover;
+text-align: center;
+position: relative;
+min-height: 95%;
+padding: 0%;
+margin:0%;
+}
+
+
+div#tab1{
+	color: white;
+	box-shadow: 3px , 3px;
+	width: 100%;
+	font-size: 40px;
+	
+	
+}
+
+@media screen and (max-width: 1024px){
+
+	#tab1 h1{
+
+	font-size: 100%;
+}
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+.livres{
+	border: 3px black solid;
+	border-radius: 15px;
+	/*box-shadow: 3px , 3px;*/
+	width: 25%;
+	padding-top:5px;
+	text-align: center;
+	margin-left: 38%;
+	margin-top: 15%;
+}
+
+
+
+footer{
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid green;
+    border-radius: 10px;
+    color:white;
+    background-color:black;
+
+}
