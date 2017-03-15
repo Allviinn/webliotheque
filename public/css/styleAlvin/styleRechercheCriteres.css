@@ -86,7 +86,7 @@ body {
 
 	#articleCriteresVille {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: yellow;
 		left: 5%;
 		top: 18%;
@@ -95,7 +95,7 @@ body {
 
 	#articleCriteresAuteur {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: blue;
 		left: 9%;
 		top: 23%;
@@ -104,7 +104,7 @@ body {
 
 	#articleCriteresTitre {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: green;
 		left: 13%;
 		top: 26%;
@@ -112,9 +112,15 @@ body {
 	
 	}
 
-	article img {
-		margin-top: 50px;
+	.xxl {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 50%;
+		z-index: 0;
 	}
+
+
 
 	#parVille, #parAuteur, #parTitre {
 		width: 80%;
@@ -128,11 +134,12 @@ body {
 		margin-left: 10%;
 		visibility: hidden;
 		overflow: scroll;
+		z-index: 10;
 	}
 
 }
 
-@media screen and (max-width: 768px) {			/* largeur tablette */
+@media screen and (min-width: 414px) {			/* largeur tablette */
 
 	header {
 		background-color: red;
@@ -213,7 +220,7 @@ body {
 
 	#articleCriteresVille {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: yellow;
 		left: 5%;
 		top: 18%;
@@ -222,7 +229,7 @@ body {
 
 	#articleCriteresAuteur {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: blue;
 		left: 9%;
 		top: 23%;
@@ -231,7 +238,7 @@ body {
 
 	#articleCriteresTitre {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: green;
 		left: 13%;
 		top: 26%;
@@ -239,8 +246,12 @@ body {
 	
 	}
 
-	article img {
-		margin-top: 50px;
+	.xxl {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 30%;
+		z-index: 0;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -255,11 +266,12 @@ body {
 		margin-left: 20%;
 		visibility: hidden;
 		overflow: scroll;
+		z-index: 10;
 	}
 
 }
 
-@media screen and (max-width: 1200px) {			/* largeur écran ordi portable */
+@media screen and (min-width: 768px) {			/* largeur écran ordi portable */
 
 	header {
 		background-color: red;
@@ -340,7 +352,7 @@ body {
 
 	#articleCriteresVille {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: yellow;
 		left: 5%;
 		top: 18%;
@@ -349,7 +361,7 @@ body {
 
 	#articleCriteresAuteur {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: blue;
 		left: 9%;
 		top: 23%;
@@ -358,7 +370,7 @@ body {
 
 	#articleCriteresTitre {
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		background-color: green;
 		left: 13%;
 		top: 26%;
@@ -366,8 +378,12 @@ body {
 	
 	}
 
-	article img {
-		margin-top: 50px;
+	.xxl {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 20%;
+		z-index: 0;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -382,12 +398,13 @@ body {
 		margin-left: 25%;
 		visibility: hidden;
 		overflow: scroll;
+		z-index: 10;
 	}
 
 
 }
 
-@media screen and (min-width: 1200px) {			/* largeur écran plus large */
+@media screen and (min-width: 1000px) {			/* largeur écran plus large */
 
 	header {
 		background-color: red;
@@ -453,7 +470,7 @@ body {
 
 	#articleCriteresVille {
 		width: 30%;
-		height: 60%;
+		height: 70%;
 		background-color: yellow;
 		left: 3%;
 		top: 18%;
@@ -462,7 +479,7 @@ body {
 
 	#articleCriteresAuteur {
 		width: 30%;
-		height: 60%;
+		height: 70%;
 		background-color: blue;
 		left: 35%;
 		top: 18%;
@@ -471,7 +488,7 @@ body {
 
 	#articleCriteresTitre {
 		width: 30%;
-		height: 60%;
+		height: 70%;
 		background-color: green;
 		left: 67%;
 		top: 18%;
@@ -479,8 +496,12 @@ body {
 	
 	}
 
-	article img {
-		margin-top: 50px;
+	.xxl {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 30%;
+		z-index: 0;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -495,6 +516,7 @@ body {
 		margin-left: 15%;
 		visibility: hidden;
 		overflow: scroll;
+		z-index: 10;
 	}
 
 }
