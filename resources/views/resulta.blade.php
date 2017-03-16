@@ -63,7 +63,7 @@
 							    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 							}).addTo(map);
 							L.marker([z, x]).addTo(map)
-							    .bindPopup('Ici')
+							    .bindPopup(data.ville[0].nom_de_l_emprunteur)
 							    .openPopup();
 							test = true;
 						}
@@ -75,7 +75,7 @@
 							    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 							}).addTo(map);
 							L.marker([z, x]).addTo(map)
-							    .bindPopup('Ici')
+							    .bindPopup(data.ville[0].nom_de_l_emprunteur)
 							    .openPopup();
 							
 						}
