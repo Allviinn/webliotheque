@@ -33,8 +33,15 @@ $(document).ready(function() {
 
   //------------------------------------------------------------------------------------------------------------
 
-	$('#submit').on('click', function() {  //soumission du formulaire au click sur la loupe
-		$('#formRecherche').submit();
+	$('#submit').on('click', function(e) {  //soumission du formulaire au click sur la loupe
+    if ($('#parVille').val().length == 0 && $('#parAuteur').val().length == 0 && $('#parTitre').val().length == 0){
+		    
+      alert('Veuillez remplir au moins un champ de recherche');
+      e.preventDefault(); 
+
+    } else if ($('#parVille').val().length !== 0 || $('#parAuteur').val().length !== 0 || $('#parTitre').val().length !== 0) {
+      $('#formRecherche').submit();
+    }
 	});
 //------------------------------------------------------------------------------------------------------------
         
