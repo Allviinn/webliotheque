@@ -14,24 +14,30 @@
 	</header>
     <div id='conteneur'>
     	<div id='resultat'>
-			@foreach($resultat as $monResultat)
-				<article class="unArticle">
-					<label>Titre de l'ouvrage:</label>
-					<p>{{ $monResultat->titre_200a }}</p><br>
-					<label>Nom de l'auteur:</label>
-					<p>{{ $monResultat->auteur_principal_nom_700a }}</p><br>
-					<label>Prénom de l'auteur:</label>
-					<p>{{ $monResultat->auteur_principal_prenom_700b }}</p><br>
-					<label>Editeur:</label>
-					<p>{{ $monResultat->editeur_210c }}</p><br>
-					<label>Année de l'édition:</label>
-					<p>{{ $monResultat->annee_edition_210d }}</p><br>
-					<label>Type de document:</label>
-					<p>{{ $monResultat->type_de_document_920t }}</p><br>
-					<label>Biblihotèque:</label>
-					<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a><br>
-				</article>
-			@endforeach
+				@foreach($resultat as $monResultat)
+					@if(empty($monResultat->nom_de_l_emprunteur))
+    					<p>Ce live est pas disponible</p>
+    				@else
+						<article class="unArticle">
+							<label>Titre de l'ouvrage:</label>
+							<p>{{ $monResultat->titre_200a }}</p><br>
+							<label>Nom de l'auteur:</label>
+							<p>{{ $monResultat->auteur_principal_nom_700a }}</p><br>
+							<label>Prénom de l'auteur:</label>
+							<p>{{ $monResultat->auteur_principal_prenom_700b }}</p><br>
+							<label>Editeur:</label>
+							<p>{{ $monResultat->editeur_210c }}</p><br>
+							<label>Année de l'édition:</label>
+							<p>{{ $monResultat->annee_edition_210d }}</p><br>
+							<label>Type de document:</label>
+							<p>{{ $monResultat->type_de_document_920t }}</p><br>
+							<label>Biblihotèque:</label>
+							<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+							<br>
+						</article>
+					@endif
+				@endforeach
+		
 		</div>
 		<div id="conteneurMap">
 			<div id="map"></div>

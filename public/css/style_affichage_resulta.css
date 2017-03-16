@@ -100,8 +100,53 @@ label
 	width: 100%;
 	height: 700px;
 }
-@media screen and (max-width: 640px) {
-	body
+@media screen and (max-width: 1600px) {
+	#resultat
+	{
+		height: 600px;
+		margin-bottom: 15px;
+	}
+	#conteneurMap 
+	{
+		height: 600px;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	#resultat
+	{
+		height: 500px;
+		margin-bottom: 15px;
+	}
+	#resultat .unArticle
+	{
+		width: 45%;
+	}
+	#conteneurMap 
+	{
+		height: 500px;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 920px) {/* largeur écran ordi portable */
+	#resultat
+	{
+		height: 400px;
+		margin-bottom: 15px;
+	}
+	#resultat .unArticle
+	{
+		width: 45%;
+	}
+	#conteneurMap 
+	{
+		height: 400px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 414px) { 			/* largeur mobile */
+  
 	{
 		font-size: 14px;
 	}
