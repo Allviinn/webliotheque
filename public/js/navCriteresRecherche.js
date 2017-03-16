@@ -1,8 +1,6 @@
 $(document).ready(function() {
-
-	
-
-	var menu = $('#articleCriteresMenu');
+  
+  var menu = $('#articleCriteresMenu');
 	var parVille = $('#articleCriteresVille');
 	var parAuteur = $('#articleCriteresAuteur');
 	var parTitre = $('#articleCriteresTitre');
@@ -35,9 +33,7 @@ $(document).ready(function() {
 		$('#formRecherche').submit();
 	});
 
-
-
-	
+        
         $('#parVille').keyup(function(e){
         	$('#recupAjaxVille').html('');
         	var code = e.which;
@@ -154,6 +150,46 @@ $(document).ready(function() {
             });
         });
 
+
+
+    if ($(window).width() < 1000) {
+
+        $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation-couleur.png');
+
+        $('#menuVille').on('click', function(e) {
+          e.preventDefault();
+          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation-couleur.png');
+          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur.png');
+          $('#imageMenuTi').attr('src', 'css/styleAlvin/book.png');
+           parAuteur.animate({left: '9%'});
+           parVille.animate({left: '5%'});
+        });
+
+
+        $('#menuAuteur').on('click', function(e) {
+          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation.png');
+          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur-couleur.png');
+          $('#imageMenuTi').attr('src', 'css/styleAlvin/book.png');
+          e.preventDefault();
+            parVille.animate({left: '-200%'});
+            parAuteur.animate({left: '9%'});
+        });
+
+
+        $('#menuTitre').on('click', function(e) {
+          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation.png');
+          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur.png');
+          $('#imageMenuTi').attr('src', 'css/styleAlvin/book-couleur.png');
+          e.preventDefault();
+            parVille.animate({left: '-200%'});
+            parAuteur.animate({left: '-200%'});
+        });
+} else {
+    $('#menuVille, #menuAuteur, #menuTitre').on('click', function(e) {
+          e.preventDefault();
+          
+        });
+}
 
 
 
