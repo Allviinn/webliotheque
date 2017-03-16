@@ -11,6 +11,7 @@
 
     <body>
         <h2>L'équipe du projet</h2>
+        <div id="fleche"><a href="/"><img src="../css/styleJulie/fleche.png"></a></div>
         <p id='description'>Nous sommes une petite équipe de 4 personnes surmotivés !</p>
 
     <div>
@@ -29,7 +30,7 @@
         </div>
 
         <div class="description">
-            <img src="css/styleJulie/manga.png">
+            <img src="css/styleJulie/raphael.png">
             <h4>Raphaël</h4>
             <p>Il est esclave et ami des&nbsp;&nbsp;<img src="../css/styleJulie/cat.png">&nbsp;&nbsp;<br>lui aussi est amateur de bons petits plats !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         </div>
@@ -42,6 +43,6 @@
     </div>
     </body>
     <footer>
-        <p>Fait dans la joie et la bonne humeur avec beaucoup de <img src="css/styleJulie/coffee.png"> et pas mal de <img src="css/styleJulie/pancake.png"> !
+        <p>Fait dans la joie et la bonne humeur avec beaucoup de <img src="css/styleJulie/coffee.png"> et pas mal de <img src="css/styleJulie/pancake.png"> ! 
     </footer>
 </html> 

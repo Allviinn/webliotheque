@@ -67,13 +67,16 @@ footer{
 }
 
 @media screen and (max-width: 500px){
-
+	div#tab1{
+		width: 100%;
+		font-size: 17px;
+	}
 	.livres{
-		margin-bottom: 28%;
-		width: 37%;
+		margin-bottom: 55%;
+		width: 44%;
 	}
 
 	#text1{
-		width: 37%;
+		width: 44%;
 	}
 }
