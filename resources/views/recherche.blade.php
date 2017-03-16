@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <form method='post' id="formRecherche" action='resultat'>
+        <form method='post' id="formRecherche" action='resultat' autocomplete='off'>
         <header>
 
             <ul id="listeHeader">
@@ -36,8 +36,8 @@
                 <div class='aligne'>
                 <input type="text" name="parTitre" id="parTitre" placeholder="Entrez le titre d'un livre"><br>
                 <div class="recupAjax" id="recupAjaxTitre"></div></div>
-                <img width="200" src="css/styleAlvin/bookXXL.png">
-                <button id="boutonTitrePrecedent"><img src="css/styleAlvin/left-arrow.png"></button>
+                <img width="200" class="xxl" src="css/styleAlvin/bookXXL.png">
+                <button id="boutonTitrePrecedent"><img width="30" src="css/styleAlvin/left-arrow.png"></button>
             </article>
 
 
@@ -47,9 +47,9 @@
                 <div class='aligne'>
                 <input type="text" name="parAuteur" id="parAuteur" placeholder="Entrez le nom d'un auteur"><br>
                 <div class="recupAjax" id="recupAjaxAuteur"></div></div>
-                <img width="200" src="css/styleAlvin/auteurXXL.png">
-                <button id="boutonAuteurSuivant"><img src="css/styleAlvin/right-arrow.png"></button>
-                <button id="boutonAuteurPrecedent"><img src="css/styleAlvin/left-arrow.png"></button>
+                <img width="200" class="xxl" src="css/styleAlvin/auteurXXL.png">
+                <button id="boutonAuteurSuivant"><img width="30" src="css/styleAlvin/right-arrow.png"></button>
+                <button id="boutonAuteurPrecedent"><img width="30" src="css/styleAlvin/left-arrow.png"></button>
             </article>
 
 
@@ -59,9 +59,9 @@
                 <div class='aligne'>
                 <input type="text" name="parVille" id="parVille" placeholder="Entrez le nom d'une ville"><br>
                 <div class="recupAjax" id="recupAjaxVille"></div></div>
-                <img width="200" src="css/styleAlvin/city.png">
+                <img width="200" class="xxl" src="css/styleAlvin/city.png">
 
-                <button id="boutonVilleSuivant"><img src="css/styleAlvin/right-arrow.png"></button>
+                <button id="boutonVilleSuivant"><img width="30" src="css/styleAlvin/right-arrow.png"></button>
             </article>
 
         <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">
