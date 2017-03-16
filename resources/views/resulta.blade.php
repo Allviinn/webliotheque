@@ -4,6 +4,7 @@
 	<title>Résultats</title>
 	<link rel="stylesheet" type="text/css" href="css/style_affichage_resulta.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
@@ -28,7 +29,7 @@
 					<label>Type de document:</label>
 					<p>{{ $monResultat->type_de_document_920t }}</p><br>
 					<label>Biblihotèque:</label>
-					<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }}</a><br>
+					<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a><br>
 				</article>
 			@endforeach
 		</div>
