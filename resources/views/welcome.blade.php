@@ -22,7 +22,7 @@
     <body>
     
 <div id = "tab1"><h1>Bienvenue sur Webliothèque71</h1></div>
-<p class="livres"><a href="recherche">Trouver les livres disponible dans vos bibliothéques</a></p><br/>
+<p class="livres"><a href="recherche">Trouver les livres disponible dans vos bibliothèques</a></p><br/>
 
    
 </body>
