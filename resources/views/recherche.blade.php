@@ -19,9 +19,9 @@
         <header>
 
             <ul id="listeHeader">
-                <li id="ville" class="liPNG"><a href="#"><img class="imgPNG" width="35" src="css/styleAlvin/localisation.png"><a/></li>
-                <li id="auteur" class="liPNG"><a href="#"><img class="imgPNG" width="35" src="css/styleAlvin/auteur.png"><a/></li>
-                <li id="titre" class="liPNG"><a href="#"><img class="imgPNG" width="35" src="css/styleAlvin/book.png"><a/></li>
+                <li id="ville" class="liPNG"><a id="menuVille" href=""><img class="imgPNG" id="imageMenuLo" width="35" src="css/styleAlvin/localisation.png"><a/></li>
+                <li id="auteur" class="liPNG"><a id="menuAuteur" href=""><img class="imgPNG" id="imageMenuAu" width="35" src="css/styleAlvin/auteur.png"><a/></li>
+                <li id="titre" class="liPNG"><a id="menuTitre" href=""><img class="imgPNG" id="imageMenuTi" width="35" src="css/styleAlvin/book.png"><a/></li>
                 <li id="liSearch"><a id="submit" href="#"><img id="imgSearch" width="35" src="css/styleAlvin/search.png"><a/></li>
             </ul>
 

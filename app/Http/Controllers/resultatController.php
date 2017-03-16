@@ -69,7 +69,7 @@ class resultatController extends Controller
     {
         $ville =  $request->input('ville');
         $uneBlibli = new Bibliotheque;
-        $lesBibli = $uneBlibli::select("longitude","latitude")->distinct()->where('nom_de_l_emprunteur',$ville)->get();
+        $lesBibli = $uneBlibli::select("longitude","latitude","nom_de_l_emprunteur")->distinct()->where('nom_de_l_emprunteur',$ville)->get();
         return response()->json([
             'ville'=>$lesBibli
             ]);
