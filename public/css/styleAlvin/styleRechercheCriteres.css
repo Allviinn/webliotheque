@@ -1,246 +1,145 @@
-body {
-	background-color: white;
-	margin: 0px;
-	padding: 0px;
-}
+	body {
+		background-color: #dddddd;
+		margin: 0px;
+		padding: 0px;
+		box-shadow: 0px 0px 10px black;
+	}
+
+	header {
+		background-color: #1A1A1A;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.articleCriteres {
+		position: absolute;
+		text-align:center;
+	}
+
+	.aligne {
+		text-align: left;
+	}
+
+	#boutonTitrePrecedent {
+		border: none;
+		background-color: #E66125;
+		position: absolute;
+		bottom: 3%;
+		right: 3%;
+	}
+
+	#boutonAuteurSuivant {
+		border: none;
+		background-color: #E66125;
+		position: absolute;
+		bottom: 3%;
+		right: 3%;
+	}
+
+	#boutonAuteurPrecedent {
+		border: none;
+		background-color: #E66125;
+		position: absolute;
+		bottom: 3%;
+		right: 15%;
+	}
+
+	#boutonVilleSuivant {
+		border: none;
+		background-color: #E66125;
+		position: absolute;
+		bottom: 3%;
+		right: 3%;
+	}
+
+	header ul {
+		height: 40px;
+	}
+
+	header ul li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		width: 15%;
+	}
+
+	#ville {
+		margin-left: 3%;
+	}
+
+	#auteur {
+		margin-left: 2%;
+	}
+
+	#titre {
+		margin-left: 2%;
+	}
+
+	#liSearch {
+		margin-left: 25%;
+	}
+
+	#articleCriteresVille {
+		width: 80%;
+		height: 70%;
+		background-color: #E66125;
+		left: 5%;
+		top: 18%;
+		box-shadow: 0px 0px 10px black;
+	}
+
+	#articleCriteresAuteur {
+		width: 80%;
+		height: 70%;
+		background-color: #E66125;
+		left: 9%;
+		top: 23%;
+		box-shadow: 0px 0px 10px black;
+	}
+
+	#articleCriteresTitre {
+		width: 80%;
+		height: 70%;
+		background-color: #E66125;
+		left: 13%;
+		top: 26%;
+		box-shadow: 0px 0px 10px black;
+	
+	}
+
+	.xxl {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 50%;
+		z-index: 0;
+	}
+
+	.recupAjax {
+		position: relative;
+		background-color: white;
+		width: 80%;
+		height: 230px;
+		margin-left: 10%;
+		visibility: hidden;
+		overflow: scroll;
+		z-index: 10;
+	}
 
 
 @media screen and (max-width: 414px) { 			/* largeur mobile */
   
-	header {
-		background-color: red;
-		padding-top: 1%;
-		padding-bottom: 1%;
-	}
-
-	.articleCriteres {
-		position: absolute;
-		text-align:center;
-	}
-
-	.aligne {
-		text-align: left;
-	}
-
-
-	#boutonTitrePrecedent {
-		border: none;
-		background-color: green;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurSuivant {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurPrecedent {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 15%;
-	}
-
-	#boutonVilleSuivant {
-		border: none;
-		background-color: yellow;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-
-	header ul {
-		height: 40px;
-	}
-
-	header ul li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px;
-		width: 15%;
-	}
-
-	#ville {
-		margin-left: 3%;
-	}
-
-	#auteur {
-		margin-left: 2%;
-	}
-
-	#titre {
-		margin-left: 2%;
-	}
-
-	#liSearch {
-		margin-left: 25%;
-	}
-
-	#articleCriteresVille {
-		width: 80%;
-		height: 60%;
-		background-color: yellow;
-		left: 5%;
-		top: 18%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresAuteur {
-		width: 80%;
-		height: 60%;
-		background-color: blue;
-		left: 9%;
-		top: 23%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresTitre {
-		width: 80%;
-		height: 60%;
-		background-color: green;
-		left: 13%;
-		top: 26%;
-		box-shadow: 0px 0px 10px grey;
-	
-	}
-
-	article img {
-		margin-top: 50px;
-	}
-
 	#parVille, #parAuteur, #parTitre {
 		width: 80%;
 		margin-left: 10%;
 	}
-
-	.recupAjax {
-		background-color: red;
-		width: 80%;
-		height: 230px;
-		margin-left: 10%;
-		visibility: hidden;
-		overflow: scroll;
-	}
-
 }
 
-@media screen and (max-width: 768px) {			/* largeur tablette */
+@media screen and (min-width: 414px) {			/* largeur tablette */
 
-	header {
-		background-color: red;
-		padding-top: 1%;
-		padding-bottom: 1%;
-	}
-
-	.articleCriteres {
-		position: absolute;
-		text-align:center;
-	}
-
-	.aligne {
-		text-align: left;
-	}
-
-
-	#boutonTitrePrecedent {
-		border: none;
-		background-color: green;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurSuivant {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurPrecedent {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 15%;
-	}
-
-	#boutonVilleSuivant {
-		border: none;
-		background-color: yellow;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-
-	header ul {
-		height: 40px;
-	}
-
-	header ul li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px;
-		width: 15%;
-	}
-
-	#ville {
-		margin-left: 3%;
-	}
-
-	#auteur {
-		margin-left: 2%;
-	}
-
-	#titre {
-		margin-left: 2%;
-	}
-
-	#liSearch {
-		margin-left: 25%;
-	}
-
-	#articleCriteresVille {
-		width: 80%;
-		height: 60%;
-		background-color: yellow;
-		left: 5%;
-		top: 18%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresAuteur {
-		width: 80%;
-		height: 60%;
-		background-color: blue;
-		left: 9%;
-		top: 23%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresTitre {
-		width: 80%;
-		height: 60%;
-		background-color: green;
-		left: 13%;
-		top: 26%;
-		box-shadow: 0px 0px 10px grey;
-	
-	}
-
-	article img {
-		margin-top: 50px;
+	.xxl {
+		top: 30%;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -249,125 +148,16 @@ body {
 	}
 
 	.recupAjax {
-		background-color: red;
 		width: 60%;
-		height: 230px;
 		margin-left: 20%;
-		visibility: hidden;
-		overflow: scroll;
 	}
 
 }
 
-@media screen and (max-width: 1200px) {			/* largeur écran ordi portable */
+@media screen and (min-width: 768px) {			/* largeur écran ordi portable */
 
-	header {
-		background-color: red;
-		padding-top: 1px;
-		padding-bottom: 1px;
-	}
-
-	.articleCriteres {
-		position: absolute;
-		text-align:center;
-	}
-
-	.aligne {
-		text-align: left;
-	}
-
-
-	#boutonTitrePrecedent {
-		border: none;
-		background-color: green;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurSuivant {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-	#boutonAuteurPrecedent {
-		border: none;
-		background-color: blue;
-		position: absolute;
-		bottom: 3%;
-		right: 15%;
-	}
-
-	#boutonVilleSuivant {
-		border: none;
-		background-color: yellow;
-		position: absolute;
-		bottom: 3%;
-		right: 3%;
-	}
-
-
-	header ul {
-		height: 40px;
-	}
-
-	header ul li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px;
-		width: 15%;
-	}
-
-	#ville {
-		margin-left: 3%;
-	}
-
-	#auteur {
-		margin-left: 2%;
-	}
-
-	#titre {
-		margin-left: 2%;
-	}
-
-	#liSearch {
-		margin-left: 25%;
-	}
-
-	#articleCriteresVille {
-		width: 80%;
-		height: 60%;
-		background-color: yellow;
-		left: 5%;
-		top: 18%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresAuteur {
-		width: 80%;
-		height: 60%;
-		background-color: blue;
-		left: 9%;
-		top: 23%;
-		box-shadow: 0px 0px 10px grey;
-	}
-
-	#articleCriteresTitre {
-		width: 80%;
-		height: 60%;
-		background-color: green;
-		left: 13%;
-		top: 26%;
-		box-shadow: 0px 0px 10px grey;
-	
-	}
-
-	article img {
-		margin-top: 50px;
+	.xxl {
+		top: 20%;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -376,35 +166,12 @@ body {
 	}
 
 	.recupAjax {
-		background-color: red;
 		width: 50%;
-		height: 230px;
 		margin-left: 25%;
-		visibility: hidden;
-		overflow: scroll;
 	}
-
-
 }
 
-@media screen and (min-width: 1200px) {			/* largeur écran plus large */
-
-	header {
-		background-color: red;
-		padding-top: 1px;
-		padding-bottom: 1px;
-	}
-
-	.articleCriteres {
-		position: absolute;
-		text-align:center;
-	}
-
-	.aligne {
-		text-align: left;
-	}
-
-
+@media screen and (min-width: 1000px) {			/* largeur écran plus large */
 
 	#boutonTitrePrecedent {
 		display: none;
@@ -420,67 +187,32 @@ body {
 
 	#boutonVilleSuivant {
 		display: none;
-	}
-
-
-	header ul {
-		height: 40px;
-	}
-
-	header ul li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px;
-		width: 15%;
-	}
-
-	#ville {
-		margin-left: 3%;
-	}
-
-	#auteur {
-		margin-left: 2%;
-	}
-
-	#titre {
-		margin-left: 2%;
-	}
-
-	#liSearch {
-		margin-left: 25%;
 	}
 
 	#articleCriteresVille {
 		width: 30%;
-		height: 60%;
-		background-color: yellow;
+		height: 70%;
 		left: 3%;
 		top: 18%;
-		box-shadow: 0px 0px 10px grey;
 	}
 
 	#articleCriteresAuteur {
 		width: 30%;
-		height: 60%;
-		background-color: blue;
+		height: 70%;
 		left: 35%;
 		top: 18%;
-		box-shadow: 0px 0px 10px grey;
 	}
 
 	#articleCriteresTitre {
 		width: 30%;
-		height: 60%;
-		background-color: green;
+		height: 70%;
 		left: 67%;
 		top: 18%;
-		box-shadow: 0px 0px 10px grey;
 	
 	}
 
-	article img {
-		margin-top: 50px;
+	.xxl {
+		top: 30%;
 	}
 
 	#parVille, #parAuteur, #parTitre {
@@ -489,12 +221,7 @@ body {
 	}
 
 	.recupAjax {
-		background-color: red;
 		width: 70%;
-		height: 230px;
 		margin-left: 15%;
-		visibility: hidden;
-		overflow: scroll;
 	}
-
 }
