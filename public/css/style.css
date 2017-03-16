@@ -1,7 +1,3 @@
-{
-	box-sizing: border-box;
-}
-
 
 html{
 	height:100%;
@@ -14,32 +10,31 @@ background-size: cover;
 text-align: center;
 position: relative;
 min-height: 95%;
-padding: 0%;
-margin:0%;
+
 }
 
 
 div#tab1{
-	margin: 30px;
-	padding: 5px;
+	margin-top:  30px;
 	background-color: black;
 	color: #e0876a;
 	border:3px solid #e0876a;
 	border-radius: 10px; 
 	width: 100%;
-	/*font-size: 40px;*/
+	font-size: 22px;
 	
-	
 }
 
-@media screen and (max-width: 1024px){
-
-	#tab1 h1{
-
-	font-size: 100%;
+#text1{
+	color: #e0876a;
+	background-color:black;
+	border: 3px  solid #e0876a;
+	border-radius: 15px;
+	width: 32%;
+	margin-left: 38%;
+	margin-top: 15%;
+	font-size: 18px;
 }
-}
-
 
 a{
 	text-decoration: none;
@@ -49,11 +44,11 @@ a{
 .livres{
 	border: 3px  solid #e0876a;
 	border-radius: 15px;
-	width: 25%;
+	width: 32%;
 	text-align: center;
 	margin-left: 38%;
-	margin-top: 15%;
 	background-color:black;
+	font-size: 18px;
 }
 
 
@@ -69,4 +64,16 @@ footer{
     color:#e0876a;
     background-color:black;
 
+}
+
+@media screen and (max-width: 500px){
+
+	.livres{
+		margin-bottom: 28%;
+		width: 37%;
+	}
+
+	#text1{
+		width: 37%;
+	}
 }
