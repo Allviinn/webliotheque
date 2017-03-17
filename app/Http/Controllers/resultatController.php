@@ -61,8 +61,8 @@ class resultatController extends Controller
                                                     ->get();
         }
 
-        
-            return view('resulta', array('resultat' => $resultat));
+                return view('resulta', array('resultat' => $resultat));
+
     }
 
     public function afficherMap(Request $request)
