@@ -27,11 +27,11 @@
 							<p>{{ $monResultat->auteur_principal_prenom_700b }}</p><br>
 							<label>Editeur:</label>
 							<p>{{ $monResultat->editeur_210c }}</p><br>
-							<label>Année de l'édition:</label>
+							<label>Année d'édition:</label>
 							<p>{{ $monResultat->annee_edition_210d }}</p><br>
 							<label>Type de document:</label>
 							<p>{{ $monResultat->type_de_document_920t }}</p><br>
-							<label>Biblihotèque:</label>
+							<label>Bibliothèque:</label>
 							<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a>
 							<br>
 						</article>

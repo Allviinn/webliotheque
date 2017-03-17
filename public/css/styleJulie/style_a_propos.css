@@ -19,6 +19,9 @@ p{
 	color: #e0876a;
 	font-size: 17px;
 }
+#fleche{
+	margin-right: 95%;
+}
 #description{
 	font-size: 25px;
 	font-style: italic;
