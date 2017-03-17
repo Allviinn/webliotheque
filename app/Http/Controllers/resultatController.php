@@ -22,10 +22,8 @@ class resultatController extends Controller
         {
             $resultat = $table::select('*')->where('nom_de_l_emprunteur', $parVille)
                                                 ->orWhere([['auteur_principal_nom_700a', $parAuteur],
-                                                           ['nom_de_l_emprunteur', '!=',''], 
                                                         ])
                                                 ->orWhere([['titre_200a','=', $parTitre],
-                                                          ['nom_de_l_emprunteur', '!=',''],
                                                         ])->distinct()
                                                 ->get();
         }
@@ -56,12 +54,13 @@ class resultatController extends Controller
                                                     ->orWhere([
                                                             ['auteur_principal_nom_700a', '=', $parAuteur],
                                                             ['titre_200a', '=', $parTitre],
-                                                            ['nom_de_l_emprunteur', '!=',''],
                                                             ])->distinct()
                                                     ->get();
         }
 
+
                 return view('resulta', array('resultat' => $resultat));
+
 
     }
 

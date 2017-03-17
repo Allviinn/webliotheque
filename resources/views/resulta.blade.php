@@ -15,9 +15,6 @@
     <div id='conteneur'>
     	<div id='resultat'>
 				@foreach($resultat as $monResultat)
-					@if(empty($monResultat->nom_de_l_emprunteur))
-    					<p>Ce live est pas disponible</p>
-    				@else
 						<article class="unArticle">
 							<label>Titre de l'ouvrage:</label>
 							<p>{{ $monResultat->titre_200a }}</p><br>
@@ -32,10 +29,14 @@
 							<label>Type de document:</label>
 							<p>{{ $monResultat->type_de_document_920t }}</p><br>
 							<label>Bibliothèque:</label>
-							<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+							@if(empty($monResultat->nom_de_l_emprunteur))
+    							<p>Ce livre est pas disponible</p>
+    						@else
+								<a id='{{ $monResultat->nom_de_l_emprunteur }}' class='lien' href='#'>{{ $monResultat->nom_de_l_emprunteur }} <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+							@endif
 							<br>
 						</article>
-					@endif
+					
 				@endforeach
 		
 		</div>
