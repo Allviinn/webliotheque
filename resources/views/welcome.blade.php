@@ -31,7 +31,7 @@
 </body>
 
 <footer>
-        <p>Fait dans la joie et la bonne humeur avec beaucoup de <img src="../css/coffee.png"> et pas mal de <img src="../css/pancake.png"> !&nbsp;&nbsp;&nbsp;&nbsp;<a href="a_propos">À la découverte de notre équipe !</a></p>
+        <p>Fait dans la joie et la bonne humeur avec beaucoup de <img src="css/coffee.png"> et pas mal de <img src="css/pancake.png"> !&nbsp;&nbsp;&nbsp;&nbsp;<a href="a_propos">À la découverte de notre équipe !</a></p>
 </footer> 
 </html>
 

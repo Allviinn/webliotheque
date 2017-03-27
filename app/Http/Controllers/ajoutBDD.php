@@ -12,7 +12,13 @@ class ajoutBDD extends Controller
     {
     	set_time_limit(0);
     	$uneBlibli = new Bibliotheque;
+<<<<<<< HEAD
     	if (($handle = fopen("/home/theveniaux/OpenDataDLP.csv", "r")) !== FALSE) 
+=======
+
+
+    	if (($handle = fopen("\home\mujkic\OpenDataDLP.csv", "r")) !== FALSE) 
+>>>>>>> 09d266bf2488c566817b80917651e0ba5ee92108
     	{
 		    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
 		    {
@@ -70,7 +76,15 @@ class ajoutBDD extends Controller
 	    			'type_de_document_920t'=>$data[16],
 	    			'nom_de_l_emprunteur'=>$data[20],	
 	    			'longitude'=>$resulta1,
+<<<<<<< HEAD
 	    			'latitude'=>$resulta
+=======
+
+	    			'latitude'=>$resulta
+
+    			
+
+>>>>>>> 09d266bf2488c566817b80917651e0ba5ee92108
     			]);
 
 		    }

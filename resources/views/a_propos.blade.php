@@ -11,12 +11,12 @@
 
     <body>
         <h2>L'équipe du projet</h2>
-        <div id="fleche"><a href="/"><img src="../css/styleJulie/fleche.png"></a></div>
+        <div id="fleche"><a href="/"><img src="css/styleJulie/fleche.png"></a></div>
         <p id='description'>Nous sommes une petite équipe de 4 personnes surmotivés !</p>
 
     <div>
         <div class="description">
-            <img src="../css/styleJulie/alvin.png">
+            <img src="css/styleJulie/alvin.png">
             <h4>Alvin</h4>
             <p>Sa passion, manger bien-sûr,
             alors faites attention à votre repas ! <br>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="description">
-            <img src="../css/styleJulie/florian.png">
+            <img src="css/styleJulie/florian.png">
             <h4>Florian</h4>
             <p> Sa&nbsp;&nbsp;<img src="css/styleJulie/gamepad.png"> c'est toute sa vie !<br>À lui seul on dénombre pas moins de 10 000 000 monstres tués !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         </div>
@@ -32,7 +32,7 @@
         <div class="description">
             <img src="css/styleJulie/raphael.png">
             <h4>Raphaël</h4>
-            <p>Il est esclave et ami des&nbsp;&nbsp;<img src="../css/styleJulie/cat.png">&nbsp;&nbsp;<br>lui aussi est amateur de bons petits plats !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Il est esclave et ami des&nbsp;&nbsp;<img src="css/styleJulie/cat.png">&nbsp;&nbsp;<br>lui aussi est amateur de bons petits plats !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         </div>
 
         <div class="description">
