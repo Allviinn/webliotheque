@@ -13,11 +13,9 @@ Route::get('recherche', 'rechercheController@index');
 
 
 // scrite d'ajout a la BDD webliotheque
-<<<<<<< HEAD
+
 Route::get('/ajoutBDD','ajoutBDD@insert');
-=======
- Route::get('/ajoutBDD','ajoutBDD@insert');
->>>>>>> 09d266bf2488c566817b80917651e0ba5ee92108
+
 
 Route::post('positionVille', 'resultatController@afficherMap');
 
