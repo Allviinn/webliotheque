@@ -9,6 +9,8 @@
 		background-color: #1A1A1A;
 		padding-top: 1%;
 		padding-bottom: 1%;
+		font-size: 20px;
+		color: white;
 	}
 
 	.articleCriteres {
@@ -20,7 +22,7 @@
 		text-align: left;
 	}
 
-	#boutonTitrePrecedent {
+	#boutonTitreSuivant {
 		border: none;
 		background-color: #E66125;
 		position: absolute;
@@ -36,13 +38,6 @@
 		right: 3%;
 	}
 
-	#boutonAuteurPrecedent {
-		border: none;
-		background-color: #E66125;
-		position: absolute;
-		bottom: 3%;
-		right: 15%;
-	}
 
 	#boutonVilleSuivant {
 		border: none;
@@ -52,8 +47,24 @@
 		right: 3%;
 	}
 
+
+	#submit {
+		position: absolute;
+		bottom: 5%;
+		width: 90%;
+		left: 5%;
+		height: 50px;
+		font-size: 20px;
+		background-color: black;
+		color: #E66125;
+		border: 2px solid grey;
+	}
+	
+
 	header ul {
 		height: 40px;
+		display: flex;
+		justify-content: space-around;
 	}
 
 	header ul li {
@@ -61,50 +72,57 @@
 		display: inline-block;
 		margin: 0px;
 		padding: 0px;
-		width: 15%;
 	}
 
-	#ville {
-		margin-left: 3%;
+	.check {
+		width: 15px;
+		height: 15px;
 	}
 
-	#auteur {
-		margin-left: 2%;
+	#ville, #auteur, #titre {
+		color: #E66125;
+		transition: color 0.5s;
 	}
 
-	#titre {
-		margin-left: 2%;
+	#home a {
+		color: #E66125;
+		text-decoration: none;
+		transition: color 1s;
 	}
 
-	#liSearch {
-		margin-left: 25%;
+	#home a:hover {
+		color: white;
 	}
+
 
 	#articleCriteresVille {
 		width: 80%;
-		height: 70%;
+		height: 60%;
 		background-color: #E66125;
 		left: 5%;
-		top: 18%;
+		top: 17%;
 		box-shadow: 0px 0px 10px black;
+		transition: opacity 0.5s;
 	}
 
 	#articleCriteresAuteur {
 		width: 80%;
-		height: 70%;
+		height: 60%;
 		background-color: #E66125;
 		left: 9%;
-		top: 23%;
+		top: 20%;
 		box-shadow: 0px 0px 10px black;
+		transition: opacity 0.5s;
 	}
 
 	#articleCriteresTitre {
 		width: 80%;
-		height: 70%;
+		height: 60%;
 		background-color: #E66125;
 		left: 13%;
-		top: 26%;
+		top: 23%;
 		box-shadow: 0px 0px 10px black;
+		transition: opacity 0.5s;
 	
 	}
 
@@ -127,12 +145,28 @@
 		z-index: 10;
 	}
 
+	#unCritereMin {
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 30%;
+		font-size: 30px;
+		text-align: center;
+		text-shadow: 0px 0px 1px #E66125;
+		transition: opacity 2s;
+		opacity: 0;
+	}
+
 
 @media screen and (max-width: 414px) { 			/* largeur mobile */
   
 	#parVille, #parAuteur, #parTitre {
 		width: 80%;
 		margin-left: 10%;
+	}
+
+	#unCritereMin {
+		font-size: 20px;
 	}
 }
 
@@ -173,15 +207,7 @@
 
 @media screen and (min-width: 1000px) {			/* largeur écran plus large */
 
-	#boutonTitrePrecedent {
-		display: none;
-	}
-
 	#boutonAuteurSuivant {
-		display: none;
-	}
-
-	#boutonAuteurPrecedent {
 		display: none;
 	}
 
@@ -189,25 +215,29 @@
 		display: none;
 	}
 
+	#boutonTitreSuivant {
+		display: none;
+	}
+
 	#articleCriteresVille {
 		width: 30%;
-		height: 70%;
+		height: 60%;
 		left: 3%;
-		top: 18%;
+		top: 21%;
 	}
 
 	#articleCriteresAuteur {
 		width: 30%;
-		height: 70%;
+		height: 60%;
 		left: 35%;
-		top: 18%;
+		top: 21%;
 	}
 
 	#articleCriteresTitre {
 		width: 30%;
-		height: 70%;
+		height: 60%;
 		left: 67%;
-		top: 18%;
+		top: 21%;
 	
 	}
 
@@ -223,5 +253,19 @@
 	.recupAjax {
 		width: 70%;
 		margin-left: 15%;
+	}
+
+	#submit {
+		width: 50%;
+		left: 25%;
+	}
+
+	#unCritereMin {
+		background-color: #1A1A1A;
+		border: 2px solid #1A1A1A;
+		padding: 20px;
+		color: white;
+		opacity: 0;
+		transition: opacity 1s;
 	}
 }

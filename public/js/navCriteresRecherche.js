@@ -9,40 +9,37 @@ $(document).ready(function() {
 
 	$('#boutonVilleSuivant').on('click', function(event) {   //navigation des articles de recherche superposés sur les fleches
 		event.preventDefault();
-		parVille.animate({left: '-200%'});
-
+		      parVille.animate({left: '-80%'}, 200, function() {
+              parVille.css('z-index', '5');
+              parTitre.css('z-index', '10');
+              parAuteur.css('z-index', '15');
+          });
+      parVille.animate({left: '5%'}, 200);
+    
 	});
 
 	$('#boutonAuteurSuivant').on('click', function(event) {    //navigation des articles de recherche superposés sur les fleches
 		event.preventDefault();
-		parAuteur.animate({left: '-200%'});
+		      parAuteur.animate({left: '-80%'}, 200, function() {
+              parAuteur.css('z-index', '5');
+              parVille.css('z-index', '10');
+              parTitre.css('z-index', '15');
 
+        });
+    parAuteur.animate({left: '9%'}, 200);
 	});
 
-	$('#boutonTitrePrecedent').on('click', function(event) {   //navigation des articles de recherche superposés sur les fleches
-		event.preventDefault();
-		parAuteur.animate({left: '9%'});
+  $('#boutonTitreSuivant').on('click', function() {
+      event.preventDefault();
+          parTitre.animate({left: '-80%'}, 200, function() {
+              parTitre.css('z-index', '5');
+              parAuteur.css('z-index', '10');
+              parVille.css('z-index', '15');
 
-	});
+          });
+    parTitre.animate({left: '13%'}, 200);
+  });
 
-	$('#boutonAuteurPrecedent').on('click', function(event) {    //navigation des articles de recherche superposés sur les fleches
-		event.preventDefault();
-		parVille.animate({left: '5%'});
-
-	});
-
-  //------------------------------------------------------------------------------------------------------------
-
-	$('#submit').on('click', function(e) {  //soumission du formulaire au click sur la loupe
-    if ($('#parVille').val().length == 0 && $('#parAuteur').val().length == 0 && $('#parTitre').val().length == 0){
-		    
-      alert('Veuillez remplir au moins un champ de recherche');
-      e.preventDefault(); 
-
-    } else if ($('#parVille').val().length !== 0 || $('#parAuteur').val().length !== 0 || $('#parTitre').val().length !== 0) {
-      $('#formRecherche').submit();
-    }
-	});
 //------------------------------------------------------------------------------------------------------------
         
         $('#parVille').keyup(function(e){//ajax, envoi de donnée de la recherche par ville
@@ -155,7 +152,7 @@ $(document).ready(function() {
               		$('.listeTitres').on('click', function(e) {//ajax, envoi de donnée de la recherche par titre de livre
               			e.preventDefault();
         				$('#parTitre').val($(this).html());
-        				$('#recupAjaxTitre').css('visibility', 'hidden');
+        				$('#recupAjaxTitre').css('visibility', 'hidden');eqrhyqerh
         			});
                 }
             });
@@ -165,43 +162,121 @@ $(document).ready(function() {
 //------------------------------------------------------------------------------------------------------------
     if ($(window).width() < 1000) {
 
-        $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation-couleur.png');
+          $('#checkVille').change(function() {
+                if($(this).is(':checked') == true) {
+                        $('#ville').css('color', '#E66125');
+                         $('#articleCriteresVille').css('opacity', '1');
+                } else {
+                      $('#ville').css('color', 'white');
+                      $('#articleCriteresVille').css('opacity', '0');
+                }
+          });
 
-        $('#menuVille').on('click', function(e) { //Navigation entre les articles supérposé au clique sur les icones du menu
-          e.preventDefault();
-          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation-couleur.png');
-          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur.png');
-          $('#imageMenuTi').attr('src', 'css/styleAlvin/book.png');
-           parAuteur.animate({left: '9%'});
-           parVille.animate({left: '5%'});
-        });
-//Navigation entre les articles supérposé au clique sur les icones du menu
+           $('#checkAuteur').change(function() {
+                if($(this).is(':checked') == true) {
+                        $('#auteur').css('color', '#E66125');
+                        $('#articleCriteresAuteur').css('opacity', '1');
+                } else {
+                      $('#auteur').css('color', 'white');
+                       $('#articleCriteresAuteur').css('opacity', '0');
+                }
+          });
 
-        $('#menuAuteur').on('click', function(e) {
-          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation.png');
-          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur-couleur.png');
-          $('#imageMenuTi').attr('src', 'css/styleAlvin/book.png');
-          e.preventDefault();
-            parVille.animate({left: '-200%'});
-            parAuteur.animate({left: '9%'});
-        });
-//Navigation entre les articles supérposé au clique sur les icones du menu
+           $('#checkTitre').change(function() {
+                if($(this).is(':checked') == true) {
+                        $('#titre').css('color', '#E66125');
+                       $('#articleCriteresTitre').css('opacity', '1');
+                } else {
+                      $('#titre').css('color', 'white');
+                       $('#articleCriteresTitre').css('opacity', '0');
+                }
+          });
 
-        $('#menuTitre').on('click', function(e) {
-          $('#imageMenuLo').attr('src', 'css/styleAlvin/localisation.png');
-          $('#imageMenuAu').attr('src', 'css/styleAlvin/auteur.png');
-          $('#imageMenuTi').attr('src', 'css/styleAlvin/book-couleur.png');
-          e.preventDefault();
-            parVille.animate({left: '-200%'});
-            parAuteur.animate({left: '-200%'});
-        });
-} else {
-    $('#menuVille, #menuAuteur, #menuTitre').on('click', function(e) {
-          e.preventDefault();
-          
-        });
-}
 
+           $('.check').change(function() {
+            if ($('#checkTitre').is(':checked') == false 
+                && $('#checkAuteur').is(':checked') == false 
+                && $('#checkVille').is(':checked') == false) {
+                $('#unCritereMin').css('opacity', '1');
+            } else {
+              $('#unCritereMin').css('opacity', '0');
+            }
+
+            if ($('#checkTitre').is(':checked') == true && $('#checkAuteur').is(':checked') == false  && $('#checkVille').is(':checked') == false || $('#checkTitre').is(':checked') == false && $('#checkAuteur').is(':checked') == true && $('#checkVille').is(':checked') == false || $('#checkTitre').is(':checked') == false && $('#checkAuteur').is(':checked') == false && $('#checkVille').is(':checked') == true) {
+
+                $('.autreCriteres').css('display', 'none');
+
+            } else {
+
+              $('.autreCriteres').css('display', 'block');
+            }
+
+          });
+        
+    } else {
+          $('#checkVille').change(function() {
+                if($(this).is(':checked') == true) {
+                        $('#ville').css('color', '#E66125');
+                        $('#articleCriteresVille').css('opacity', '1');
+                        $('#parVille').removeAttr('disabled');
+                } else {
+                      $('#ville').css('color', 'white');
+                      $('#articleCriteresVille').css('opacity', '0.3');
+                      $('#parVille').attr('disabled', 'disabled');
+                }
+          });
+
+           $('#checkAuteur').change(function() {
+                if($(this).is(':checked') == true) {
+                        $('#auteur').css('color', '#E66125');
+                        $('#articleCriteresAuteur').css('opacity', '1');
+                        $('#parAuteur').removeAttr('disabled');
+                } else {
+                      $('#auteur').css('color', 'white');
+                       $('#articleCriteresAuteur').css('opacity', '0.3');
+                       $('#parAuteur').attr('disabled', 'disabled');
+                }
+          });
+
+           $('#checkTitre').change(function() {
+                if($(this).is(':checked') == true) {
+                      $('#titre').css('color', '#E66125');
+                      $('#articleCriteresTitre').css('opacity', '1');
+                      $('#parTitre').removeAttr('disabled');
+                } else {
+                      $('#titre').css('color', 'white');
+                       $('#articleCriteresTitre').css('opacity', '0.3');
+                       $('#parTitre').attr('disabled', 'disabled');
+                }
+          });
+
+           $('.check').change(function() {
+            if ($('#checkTitre').is(':checked') == false 
+                && $('#checkAuteur').is(':checked') == false 
+                && $('#checkVille').is(':checked') == false) {
+                $('#unCritereMin').css('opacity', '1');
+                $('#unCritereMin').css('z-index', '19');
+            } else {
+              $('#unCritereMin').css('opacity', '0');
+            }
+
+          });
+    }
+//--------------------------------Clik sur lancer recherche ---------------------
+
+$('#submit').on('click', function(e) {
+      if ($('#checkTitre').is(':checked') == false 
+      && $('#checkAuteur').is(':checked') == false 
+      && $('#checkVille').is(':checked') == false) {
+                
+          alert('Saisissez au moins un critere');
+          e.preventDefault();        
+            } else {
+              
+            }
+
+
+});
 
 
 	

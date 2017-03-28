@@ -19,10 +19,12 @@
         <header>
 
             <ul id="listeHeader">
-                <li id="ville" class="liPNG"><a id="menuVille" href=""><img class="imgPNG" id="imageMenuLo" width="35" src="css/styleAlvin/localisation.png"><a/></li>
-                <li id="auteur" class="liPNG"><a id="menuAuteur" href=""><img class="imgPNG" id="imageMenuAu" width="35" src="css/styleAlvin/auteur.png"><a/></li>
-                <li id="titre" class="liPNG"><a id="menuTitre" href=""><img class="imgPNG" id="imageMenuTi" width="35" src="css/styleAlvin/book.png"><a/></li>
-                <li id="liSearch"><a id="submit" href="#"><img id="imgSearch" width="35" src="css/styleAlvin/search.png"><a/></li>
+                <li id="home" class="liPNG"><a href="webliotheque71/public/">Accueil</a></li>
+                <li id="recherchPar" class="liPNG">Rechecher par :</li>
+                <li id="ville" class="liPNG">Ville&nbsp;&nbsp;<input type="checkbox" id="checkVille" class="check" checked></li>
+                <li id="auteur" class="liPNG">Auteur&nbsp;&nbsp;<input type="checkbox" id="checkAuteur" class="check" checked></li>
+                <li id="titre" class="liPNG">Titre&nbsp;&nbsp;<input type="checkbox" id="checkTitre" class="check" checked></li>
+                
             </ul>
 
         </header>
@@ -37,7 +39,7 @@
                 <input type="text" name="parTitre" id="parTitre" placeholder="Entrez le titre d'un livre"><br>
                 <div class="recupAjax" id="recupAjaxTitre"></div></div>
                 <img width="200" class="xxl" src="css/styleAlvin/bookXXL.png">
-                <button id="boutonTitrePrecedent"><img width="30" src="css/styleAlvin/left-arrow.png"></button>
+                <button class="autreCriteres" id="boutonTitreSuivant">Autres critères de recherche&nbsp;&nbsp;<img width="15" src="css/styleAlvin/right-arrow.png"></button>
             </article>
 
 
@@ -48,8 +50,7 @@
                 <input type="text" name="parAuteur" id="parAuteur" placeholder="Entrez le nom d'un auteur"><br>
                 <div class="recupAjax" id="recupAjaxAuteur"></div></div>
                 <img width="200" class="xxl" src="css/styleAlvin/auteurXXL.png">
-                <button id="boutonAuteurSuivant"><img width="30" src="css/styleAlvin/right-arrow.png"></button>
-                <button id="boutonAuteurPrecedent"><img width="30" src="css/styleAlvin/left-arrow.png"></button>
+                <button class="autreCriteres" id="boutonAuteurSuivant">Autres critères de recherche&nbsp;&nbsp;<img width="15" src="css/styleAlvin/right-arrow.png"></button>
             </article>
 
 
@@ -61,10 +62,11 @@
                 <div class="recupAjax" id="recupAjaxVille"></div></div>
                 <img width="200" class="xxl" src="css/styleAlvin/city.png">
 
-                <button id="boutonVilleSuivant"><img width="30" src="css/styleAlvin/right-arrow.png"></button>
+                <button class="autreCriteres" id="boutonVilleSuivant">Autres critères de recherche&nbsp;&nbsp;<img width="15" src="css/styleAlvin/right-arrow.png"></button>
             </article>
-
+        <div id="unCritereMin">Veullez sélectionner au moins un critère de recherche</div>
         <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">
+        <button id="submit">Lancer la recherche !</button>
         </form >
         </section>  
 
