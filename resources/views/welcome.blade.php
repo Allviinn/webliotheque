@@ -15,7 +15,7 @@
         <!-- Fonts -->
          <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         
      
     </head>
@@ -26,7 +26,7 @@
     
 Bonjour à tous , ce site peut vous aider à rechercher le livre que vous souhaitez dans la bibliothèque de votre<br> choix en Saône et Loire. Bonne recherche à tous et bonne lecture !  </p></div>
 
-<div id = "tab2"><a id="trouverLivre" href="recherche">Trouver les livres disponible </a><br/></div>
+<div id = "tab2"><a id="trouverLivre" href="recherche">Trouver les livres disponibles </a><br/></div>
 
    
 </body>
