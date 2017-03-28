@@ -164,30 +164,30 @@ $(document).ready(function() {
 
           $('#checkVille').change(function() {
                 if($(this).is(':checked') == true) {
-                        $('#ville').css('color', '#E66125');
+                        $('#ville').css('color', '#d90b37');
                          $('#articleCriteresVille').css('opacity', '1');
                 } else {
-                      $('#ville').css('color', 'white');
+                      $('#ville').css('color', '#696273');
                       $('#articleCriteresVille').css('opacity', '0');
                 }
           });
 
            $('#checkAuteur').change(function() {
                 if($(this).is(':checked') == true) {
-                        $('#auteur').css('color', '#E66125');
+                        $('#auteur').css('color', '#d90b37');
                         $('#articleCriteresAuteur').css('opacity', '1');
                 } else {
-                      $('#auteur').css('color', 'white');
+                      $('#auteur').css('color', '#696273');
                        $('#articleCriteresAuteur').css('opacity', '0');
                 }
           });
 
            $('#checkTitre').change(function() {
                 if($(this).is(':checked') == true) {
-                        $('#titre').css('color', '#E66125');
+                        $('#titre').css('color', '#d90b37');
                        $('#articleCriteresTitre').css('opacity', '1');
                 } else {
-                      $('#titre').css('color', 'white');
+                      $('#titre').css('color', '#696273');
                        $('#articleCriteresTitre').css('opacity', '0');
                 }
           });
@@ -216,11 +216,11 @@ $(document).ready(function() {
     } else {
           $('#checkVille').change(function() {
                 if($(this).is(':checked') == true) {
-                        $('#ville').css('color', '#E66125');
+                        $('#ville').css('color', '#d90b37');
                         $('#articleCriteresVille').css('opacity', '1');
                         $('#parVille').removeAttr('disabled');
                 } else {
-                      $('#ville').css('color', 'white');
+                      $('#ville').css('color', '#696273');
                       $('#articleCriteresVille').css('opacity', '0.3');
                       $('#parVille').attr('disabled', 'disabled');
                 }
@@ -228,11 +228,11 @@ $(document).ready(function() {
 
            $('#checkAuteur').change(function() {
                 if($(this).is(':checked') == true) {
-                        $('#auteur').css('color', '#E66125');
+                        $('#auteur').css('color', '#d90b37');
                         $('#articleCriteresAuteur').css('opacity', '1');
                         $('#parAuteur').removeAttr('disabled');
                 } else {
-                      $('#auteur').css('color', 'white');
+                      $('#auteur').css('color', '#696273');
                        $('#articleCriteresAuteur').css('opacity', '0.3');
                        $('#parAuteur').attr('disabled', 'disabled');
                 }
@@ -240,11 +240,11 @@ $(document).ready(function() {
 
            $('#checkTitre').change(function() {
                 if($(this).is(':checked') == true) {
-                      $('#titre').css('color', '#E66125');
+                      $('#titre').css('color', '#d90b37');
                       $('#articleCriteresTitre').css('opacity', '1');
                       $('#parTitre').removeAttr('disabled');
                 } else {
-                      $('#titre').css('color', 'white');
+                      $('#titre').css('color', '#696273');
                        $('#articleCriteresTitre').css('opacity', '0.3');
                        $('#parTitre').attr('disabled', 'disabled');
                 }

@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<a id='retour' href="/recherche"><img id='img_retour' src="css/left-arrow.png" alt="retour"></a>
+		<a id='retour' href="webliotheque71/public/recherche/"><img id='img_retour' src="css/left-arrow.png" alt="retour"></a>
 	    <h1>Résultats de votre recherche</h1>
 	</header>
     <div id='conteneur'>

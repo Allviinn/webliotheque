@@ -1,6 +1,6 @@
 html{
 	height: 100%;
-	background:linear-gradient(to bottom, #e66125 0%, #000000 100%);
+	background:linear-gradient(to bottom, #696273 0%, #CED9E4 100%);
 }
 body{
 	position: relative;
@@ -14,9 +14,11 @@ h2{
 	color: white;
 	border : 2px solid white;
 	width: 99.80%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 p{
-	color: #e0876a;
+	color:  white;
 	font-size: 17px;
 }
 #fleche{
@@ -33,11 +35,11 @@ p{
 h4{
 	font-size: 20px;
 	font-style: bold;
-	color: #f4a688;
+	color:  white;
 }
 footer{
 	position: absolute;
-	border: 2px solid #e0876a;
+	border: 2px solid white;
 	bottom: 0;
 	left: 0;
 	right: 0;

@@ -10,7 +10,7 @@
 
     <body>
         <h2>L'équipe du projet</h2>
-        <div id="fleche"><a href="webliotheque/public/"><img src="css/styleJulie/fleche.png"></a></div>
+        <div id="fleche"><a href="webliotheque71/public/"><img src="css/styleJulie/fleche.png"></a></div>
         <p id='description'>Nous sommes une petite équipe de 4 personnes SURMOTIVÉES !</p><br><br><br>
 
     <div>

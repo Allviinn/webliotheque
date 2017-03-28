@@ -24,7 +24,7 @@
 <div id = "tab1">
 <h1>Bienvenue sur Webliothèque71</h1>
     
-Bonjour à tous , ce site peut vous aider à rechercher le livre que vous souhaitez dans la bibliothèque de votre choix en Saône et Loire.<br>Bonne recherche à tous et bonne lecture !  </p></div>
+Bonjour à tous , ce site peut vous aider à rechercher le livre que vous souhaitez dans la bibliothèque de votre<br> choix en Saône et Loire. Bonne recherche à tous et bonne lecture !  </p></div>
 
 <div id = "tab2"><a id="trouverLivre" href="recherche">Trouver les livres disponible </a><br/></div>
 

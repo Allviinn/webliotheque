@@ -20,7 +20,7 @@
 
             <ul id="listeHeader">
                 <li id="home" class="liPNG"><a href="webliotheque71/public/">Accueil</a></li>
-                <li id="recherchPar" class="liPNG">Rechecher par :</li>
+                <li id="recherchPar" class="liPNG">Rechercher par :</li>
                 <li id="ville" class="liPNG">Ville&nbsp;&nbsp;<input type="checkbox" id="checkVille" class="check" checked></li>
                 <li id="auteur" class="liPNG">Auteur&nbsp;&nbsp;<input type="checkbox" id="checkAuteur" class="check" checked></li>
                 <li id="titre" class="liPNG">Titre&nbsp;&nbsp;<input type="checkbox" id="checkTitre" class="check" checked></li>

@@ -1,21 +1,30 @@
 	body {
-		background-color: #dddddd;
+		background-color: #696273;
 		margin: 0px;
 		padding: 0px;
 		box-shadow: 0px 0px 10px black;
+		padding: 0;
 	}
 
 	header {
-		background-color: #1A1A1A;
-		padding-top: 1%;
-		padding-bottom: 1%;
-		font-size: 20px;
+		background-color: #CED9E4;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		color: white;
+		font-size: 20px;
 	}
 
 	.articleCriteres {
 		position: absolute;
 		text-align:center;
+	}
+
+	.articleCriteres h3 {
+		margin-top: 290px;
+	}
+
+	.articleCriteres img {
+		top: 5%;
 	}
 
 	.aligne {
@@ -24,7 +33,6 @@
 
 	#boutonTitreSuivant {
 		border: none;
-		background-color: #E66125;
 		position: absolute;
 		bottom: 3%;
 		right: 3%;
@@ -55,8 +63,8 @@
 		left: 5%;
 		height: 50px;
 		font-size: 20px;
-		background-color: black;
-		color: #E66125;
+		background-color: #d90b37;
+		color: white;
 		border: 2px solid grey;
 	}
 	
@@ -64,14 +72,17 @@
 	header ul {
 		height: 40px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
+		padding: 0;
 	}
 
 	header ul li {
 		list-style-type: none;
 		display: inline-block;
 		margin: 0px;
-		padding: 0px;
+		padding: 5px;
+		text-shadow: 0px 0px 1px grey;
 	}
 
 	.check {
@@ -80,12 +91,12 @@
 	}
 
 	#ville, #auteur, #titre {
-		color: #E66125;
+		color: #d90b37;
 		transition: color 0.5s;
 	}
 
 	#home a {
-		color: #E66125;
+		color: #d90b37;
 		text-decoration: none;
 		transition: color 1s;
 	}
@@ -94,35 +105,38 @@
 		color: white;
 	}
 
+	#recherchPar {
+		color: black;
+	}
 
 	#articleCriteresVille {
 		width: 80%;
 		height: 60%;
-		background-color: #E66125;
 		left: 5%;
 		top: 17%;
 		box-shadow: 0px 0px 10px black;
 		transition: opacity 0.5s;
+		background-color: #FAFDFF;
 	}
 
 	#articleCriteresAuteur {
 		width: 80%;
 		height: 60%;
-		background-color: #E66125;
 		left: 9%;
 		top: 20%;
 		box-shadow: 0px 0px 10px black;
 		transition: opacity 0.5s;
+		background-color: #FAFDFF;
 	}
 
 	#articleCriteresTitre {
 		width: 80%;
 		height: 60%;
-		background-color: #E66125;
 		left: 13%;
 		top: 23%;
 		box-shadow: 0px 0px 10px black;
 		transition: opacity 0.5s;
+		background-color: #FAFDFF;
 	
 	}
 
@@ -130,7 +144,7 @@
 		position: absolute;
 		width: 40%;
 		left: 30%;
-		top: 50%;
+		top: 80%;
 		z-index: 0;
 	}
 
@@ -206,6 +220,10 @@
 }
 
 @media screen and (min-width: 1000px) {			/* largeur écran plus large */
+
+	header {
+		font-size: 23px;
+	}
 
 	#boutonAuteurSuivant {
 		display: none;

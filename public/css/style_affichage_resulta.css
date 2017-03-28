@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: #dddddd;
+	background-color: #696273;
 }
 p
 {
@@ -13,8 +13,8 @@ p
 header
 {
 	height: 110px;
-	background-color: #1A1A1A; 
-	color: white;
+	background-color: #CED9E4;
+	color: #d90b37;
 	box-shadow: 0px 0px 10px #1A1A1A;
 	box-sizing: border-box;
 	display: flex;
@@ -54,13 +54,11 @@ h1
 	margin-top: 3.5%;
 	width: 46%;
 	height: 700px;
-	background-color: blue;
 	margin-right: 2%;
 	margin-left: 2%;
-	display: flex;
 	flex-wrap: wrap;
 	overflow: auto;
-	background-color: #E66125;
+	background-color: #CED9E4;
 	box-shadow: 0px 0px 10px black;
 }
 #resultat .unArticle
