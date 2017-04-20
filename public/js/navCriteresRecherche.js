@@ -29,7 +29,7 @@ $(document).ready(function() {
     parAuteur.animate({left: '9%'}, 200);
 	});
 
-  $('#boutonTitreSuivant').on('click', function() {
+  $('#boutonTitreSuivant').on('click', function(event) {
       event.preventDefault();
           parTitre.animate({left: '-80%'}, 200, function() {
               parTitre.css('z-index', '5');

@@ -19,36 +19,14 @@
     		var map;	
     		var x;
 			var z;
-			var nom 
+			var nom;
+			var test = false; 
     	</script>
     	<div id='resultat'>
     		<?php
     			$i=0;
     		?>
 				@foreach($resultat as $monResultat)
-					@if($i==0)
-						@if(empty($monResultat->nom_de_l_emprunteur))
-							@if(count($resultat)>1)
-								<script type="text/javascript">
-								    x = '{{ $resultat[1]->longitude}}';
-								    z = '{{ $resultat[1]->latitude}}';
-								    nom = '{{ $resultat[1]->nom_de_l_emprunteur}}';
-								</script>
-							@else
-								<script type="text/javascript">
-								    x = 4.383721499999979;
-								    z = 47.0525047;
-								    nom = '';
-								</script>
-							@endif
-						@else
-							<script type="text/javascript">
-							    x = '{{ $monResultat->longitude }}';
-							    z = '{{ $monResultat->latitude }}';
-							    nom = '{{ $monResultat->nom_de_l_emprunteur }}';
-							</script>
-						@endif			
-					@endif
 						<article class="unArticle">
 							<label>Titre de l'ouvrage:</label>
 							<p>{{ $monResultat->titre_200a }}</p><br>
@@ -80,26 +58,7 @@
 		</div>
 	<div>
 	<script type="text/javascript">
-		var nbClass;
-		nbClass = $('.lien').length;
-		map = L.map('map').setView([z,x], 15);
-							L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-							    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-							}).addTo(map);
-							L.marker([{{ $monResultat->latitude }}, {{ $monResultat->longitude }}]).addTo(map)
-							    .bindPopup(nom)
-							    .openPopup();
-		for(var i=0;i<nbClass;i++)
-				{
-					if($('.lien')[i].text == nom+" ")
-					{
-						$('.lien')[i].style.color = ' #E66125';
-					}
-					else
-					{
-						$('.lien')[i].style.color = 'White';
-					}
-				}
+		
 
 		$('document').ready(function(){
 			nbClass = $('.lien').length;
@@ -128,18 +87,32 @@
 						"ville": this.text
 					},
 					success:function(data){
-						var x = data.ville[0].longitude;
-						var z = data.ville[0].latitude;
-		
-							map.remove();
-							map = L.map('map').setView([z, x], 15);
-							L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-							    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-							}).addTo(map);
-							L.marker([z, x]).addTo(map)
-							    .bindPopup(data.ville[0].nom_de_l_emprunteur)
-							    .openPopup();
-					}
+                        var x = data.ville[0].longitude;
+                        var z = data.ville[0].latitude;
+                        if(test == false )
+                        {
+                            map = L.map('map').setView([z, x], 20);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            }).addTo(map);
+                            L.marker([z, x]).addTo(map)
+.bindPopup(data.ville[0].nom_de_l_emprunteur)
+                                .openPopup();
+                            test = true;
+                        }
+                        else
+                        {
+                            map.remove();
+                            map = L.map('map').setView([z, x], 20);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            }).addTo(map);
+                            L.marker([z, x]).addTo(map)
+.bindPopup(data.ville[0].nom_de_l_emprunteur)
+                                .openPopup();
+
+                        }
+                    } 
 				});
 			});
 		});
